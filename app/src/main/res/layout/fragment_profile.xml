@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_above="@+id/bottom_nav"
+    tools:context=".ProfileFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="20dp"
+        android:background="#3F4BB5">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/profile_image"
+            android:src="@drawable/india"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/mobilenumber_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:fontFamily="@font/bungee"
+            android:includeFontPadding="false"
+            android:text="9494962617"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="20dp"
+       android:layout_marginTop="-100dp"
+       >
+       <com.google.android.material.card.MaterialCardView
+           android:layout_height="125dp"
+           android:layout_margin="10dp"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           app:cardBackgroundColor="#3F4BB5"
+           app:cardElevation="10dp">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:padding="5dp">
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/india"
+                   android:layout_centerHorizontal="true"></ImageView>
+               <TextView
+                   android:fontFamily="@font/bungee"
+                   android:id="@+id/city_label"
+                   android:includeFontPadding="false"
+                   android:layout_centerInParent="true"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:textColor="#FFFFFF"
+                   android:text="Hyderabad "
+                   android:textSize="20sp" />
+
+               <TextView
+                   android:id="@+id/payment_desc"
+                   android:includeFontPadding="false"
+                   android:layout_below="@id/city_label"
+                   android:layout_centerHorizontal="true"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text="City"
+                   android:textColor="#FFFFFF"
+                   android:textSize="20sp" />
+           </RelativeLayout>
+       </com.google.android.material.card.MaterialCardView>
+       <com.google.android.material.card.MaterialCardView
+           android:layout_height="125dp"
+           android:layout_margin="10dp"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           app:cardBackgroundColor="#3F4BB5"
+           app:cardElevation="10dp">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:padding="5dp">
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/india"
+                   android:layout_centerHorizontal="true"></ImageView>
+               <TextView
+                   android:fontFamily="@font/bungee"
+                   android:id="@+id/state_label"
+                   android:includeFontPadding="false"
+                   android:layout_centerInParent="true"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text="Telangana "
+                   android:textColor="#FFFFFF"
+                   android:textSize="20sp" />
+
+               <TextView
+                   android:id="@+id/state_text"
+                   android:includeFontPadding="false"
+                   android:layout_below="@id/state_label"
+                   android:layout_centerHorizontal="true"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text="State"
+                   android:textColor="#FFFFFF"
+                   android:textSize="20sp" />
+           </RelativeLayout>
+       </com.google.android.material.card.MaterialCardView>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="User Name"
+            android:id="@+id/full_name_profile"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:drawablePadding="10dp"
+                android:text="SreekanthMessi237"
+                android:id="@+id/username"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Emailid"
+            android:id="@+id/email_field"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:drawablePadding="10dp"
+                android:text="sreekanthmessi237@gmail.com"
+                android:id="@+id/emailid"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Password"
+            android:id="@+id/password_field"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="10dp"
+                android:id="@+id/password"
+                android:text="sreekanth@55"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:background="#B5943F"
+            android:fontFamily="@font/robotoregular"
+            android:id="@+id/update"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="UPDATE" />
+
+        <Button
+            android:background="#B5943F"
+            android:fontFamily="@font/robotoregular"
+            android:id="@+id/logout"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:text="Logout" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
